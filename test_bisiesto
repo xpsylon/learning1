@@ -1,0 +1,16 @@
+ingrese 1 anio
+ingrese 2 anio
+
+iteracion entre 1 anio y 2 anio
+    si no i % 4
+        NO BISIESTO
+           break
+    otro (i % 4)
+        si no i % 100 o i % 400
+            BISIESTO
+            si i % 10
+                PRINT
+        otro
+            NO BISIESTO
+    
+

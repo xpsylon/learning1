@@ -1,0 +1,27 @@
+FUNCIONES:
+
+palabra = ''
+Mientras string no este vacio
+    Quitar espacios principio y final
+    Localizar primer espacio que separa las palabras (indexado)
+    si hay un espacio:
+        string = primer espacio +1 hasta el final
+    de lo contrario:
+        palabra toma valor de frase
+        frase = ''
+    retorna palabra
+===================================================================
+version de la profe:
+
+longitud de la cadena 
+si la longitud de la cadena == 
+    return 0
+cantidad = 0
+por cada caracter de la cadena:
+    si el caracter no es un espacio:
+        sumar 1 a cantidad
+    si el caracter es un espacio y ademas no se llego al final de la cadena HOLA  JOSE 
+    y el siguiente caracter no es un espacio
+        reiniciar cantidad en 0
+
+

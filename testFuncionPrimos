@@ -1,0 +1,14 @@
+mayor = 0 (variable para factorial, valor inicial)
+
+Leer numero
+#Programa termina con input no primo
+
+Mientras NUMERO SEA PRIMO:
+    Mostrar SUMA DIGITOS DE NUMERO
+    Leer digito
+    Mostrar FRECUENCIA DIGITO EN NUMERO
+    Si numero > mayor:
+        mayor = numero
+    Leer numero
+Mostrar FACTORIAL DE MAYOR
+

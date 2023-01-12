@@ -1,0 +1,20 @@
+Leer numeros positivos
+numero mayor sumatoria digitos = 0
+cantidad numeros sumatoria menor que 10 = 0
+
+Mientras NUMERO DISTINTO a 0:
+    funcion SUMAR LOS DIGITOS
+    si resultado funcion mayor que numero mayor sumatoria digitos:
+        Sumar resultado a NUMERO MAYOR SUMATORIA DIGITOS
+        Numero de sumatoria mayor toma el valor de numero        
+    si resultado funcion menor que 10:
+        Sumar 1 a cantidad numeros sumatoria menor que 10
+    leer numeros positivos
+------------------------------------------------
+funcion sumar digitos
+    sumadigitos = 0
+    mientras numero distinto a 0:
+        digito = numero resto 10
+        sumar digito a sumadigitos
+        numero igual a numero // 10
+    retornar sumadigitos

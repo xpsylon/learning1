@@ -1,0 +1,17 @@
+Leer nombre
+Leer apellido
+Leer DNI
+Finaliza programa con nombre vacio
+Funcion DNI 7 u 8 digitos
+Funcion identificador
+
+Mientras nombre no vacio
+    Leer DNI
+    mientras Funcion DNI == False:
+        leer DNI
+
+Funcion identificador
+    nombre + len apellido + 3 primeros digitos DNI
+
+     
+

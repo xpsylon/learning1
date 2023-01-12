@@ -1,0 +1,15 @@
+Programa global:
+Leer numero
+    Mientras numero distinto de 0:
+        Mostrar llamada sumaDigitos(numero)
+        Leer numero
+
+Funcion:
+Definir sumaDigitos(numero):
+    suma digitos = 0
+    mientras numero distinto de 0:
+        digito = ultimo digito del numero
+        sumar digito a la suma digitos
+        numero = numero menos el ultimo digito
+    retornar la suma de los digitos
+    

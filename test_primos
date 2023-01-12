@@ -1,0 +1,22 @@
+numero 8
+primo True
+i 2
+8 % 2 == 0
+primo == False
+break for
+primo False
+input numero 7
+primo True
+i 2
+7 % 2 ==1
+no entra en if % == 0
+7%3 == 1
+7%4 == 3
+7%5 == 2
+7%6 == 1
+esPrimo True
+count_primos +1
+
+
+
+

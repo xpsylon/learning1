@@ -1,0 +1,23 @@
+Si recorremos los numeros que hay entre el 1 y el numero ingresado, no deberia haber
+ningun divisor salvo el 1 y el numero ingresado.
+Entonces, partimos de la base que el numero es primo y buscamos entre el 2 y un numero anterior al dado si hay algun otro divisor.
+O sea que partimos de la base que todos los numeros son primos, a menos que encontremos algun divisor mas. Todos los numeros son divisibles por si mismos y por 1 pero unicamente los primos SOLO por ellos.
+
+Empezamos con una variable booleana verdadera para los numeros primos:
+
+primo=True
+recorrer numeros entre 2 y n-1 (variable iteradora i):
+----si n % i == 0:
+--------primo=False. 
+        entonces corto el recorrido 
+---contrario primos +1
+
+    
+
+
+
+
+
+
+
+
