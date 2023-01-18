@@ -6,7 +6,7 @@ frase = input('Frase: ')
 #quita espacios ppio y final:
 frase = frase.strip()
 #dos contadores:
-cantidad = 0
+cantidad = 0 #computara la cantidad total de palabras.
 len_p_mas_larga = 0
 
 #bucle externo principal:
