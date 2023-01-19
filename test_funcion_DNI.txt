@@ -1,0 +1,18 @@
+PROGRAMA GENERAL:
+Leer numero
+    si fnDNI retorna True:
+        Mostrar DNI valido
+    caso contrario:
+        Mostrar DNI invalido
+
+FUNCION:
+definir fnDNI(numero):
+    contadorDigitos = 0
+    mientras numero distinto de 0:
+        digito = numero resto 10
+        contadorDigitos mas 1
+        numero // numero 10
+    si contadorDigitos igua a 7 u 8:
+        retorna True
+    caso contrario:
+        retorna False

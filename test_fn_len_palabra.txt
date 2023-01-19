@@ -1,0 +1,10 @@
+palabra = ''
+Mientras string no este vacio
+    Quitar espacios principio y final
+    Localizar primer espacio que separa las palabras (indexado)
+    si hay un espacio:
+        string = primer espacio +1 hasta el final
+    de lo contrario:
+        palabra toma valor de frase
+        frase = ''
+    retorna palabra
