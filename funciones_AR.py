@@ -45,6 +45,34 @@ def factorial(numero):
     for i in range(1, numero +1):
         f *= i
     return f
+
+def sumatoria(numeros):
+    summa = 0
+    for elemento in numeros:
+        summa += elemento
+    return summa
+
+#funcion que retorna en una lista los numeros menores a un numero dado por el usuario de una
+#lista anterior:
+def numeros_menores(lista, limite):
+    lista_menores_limite = []
+    for i in lista:
+        if i < limite:
+            lista_menores_limite.append(i)
+    return lista_menores_limite
+
+#funcion que da el numero de apariciones de un numero en una lista. Tuplas (numero, frec):
+def frecuencia_numero_lista(lista):
+    lista_veces = []
+    for i in lista:
+        tupleta = (i, lista.count(i))
+        if tupleta not in lista_veces:
+            lista_veces.append(tupleta)
+    return lista_veces
+                   
+    
+                   
+    
     
 
 
