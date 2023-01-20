@@ -14,5 +14,3 @@ while True:
         break
     else: #sigue ejecutando el bucle xq while sigue siendo True
         print('Opcion incorrecta. Debe ingresar 1, 2 o 3')
-        
-            
