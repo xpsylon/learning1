@@ -49,7 +49,7 @@ listis.pop(1) # removes 2
 
 #for STACK use append() and pop() for adding and removing (the last element)
 
-#using KEYWORD deL for deleting items (indexed parameter)
+#using KEYWORD del for deleting items (indexed parameter)
 lista1 = [1, 2, 3, 4, 5, 6]
 lista2 = lista1
 del(lista1[0])
