@@ -9,7 +9,30 @@ while True:
     print('3. Buscar ciudad de destino mediante DNI')
     print('4 Cantidad de pasajeros que viajan a una ciudad')
     print('5. Pais de destino mediante DNI')
-    print('6. Pasajeros que viajan a pais')
+    print('6. Cantidad de pasajeros que viajan a pais')
     print('7. Fin del programa')
 
     opcion = int(input('Ingrese el numero de opcion a ejecutar'))
+
+    if opcion == 1:
+        pasajeros = agregarPasajero(pasajeros) #funcion que tiene como parametro la lista de pasajeros y los agrega a esa misma lista
+    elif opcion == 2:
+        ciudades = agregarCiudad(ciudades) #funcion que tiene como parametro la lista de ciudades y los agrega a esa misma lista
+    elif opcion == 3:
+        dni = int(input('DNI: '))
+        print('El pasajero viaja a: ', buscarCiudad(pasajeros, dni)) #retorna ciudad
+    elif opcion == 4:
+        ciudad = input('Ciudad')
+        print('A', ciudad, 'viajan', cantidadPasajerosCiudad(pasajeros, ciudad)) #retorna q paxes
+    elif opcion == 5:
+        dni = int(input('DNI: '))
+        print('Ud viaja a', paisDestino(pasajeros, ciudades, dni)) #retorna pais de destino. Necesita 3 parametros.
+    elif opcion == 6:
+        pais = input('Pais: ')
+        print('Viajan', cantidadPasajerosPais(pasajeros, ciudades, pais), 'pasajeros')
+    
+    elif opcion == 7:
+        break
+    else:
+        print('Opcion invalida')
+            
