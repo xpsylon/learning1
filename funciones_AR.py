@@ -119,13 +119,24 @@ def paisDestino (pasajeros, ciudades, dni):
     for i in ciudades:
         if ciudad_buscada == i[0]:
             return i[1] #idem pais
-    return 'i not found'
+    return 'country not found'
 
 #dada una lista de paxes, una de ciudades y un pais, retorna la q de paxes q 
 #viajan al dicho pais
+#MI VERSION
 def cantidadPasajerosPais(pasajeros, ciudades, pais):
     for i in ciudades:
         if pais == i[1]:
             ciudad = i[0]
     return cantidadPasajerosCiudad(pasajeros, ciudad)
-    
+#VERSION PROFESORA
+#busca en la lista de pasajeros el pais q corresponda al dni, (i[1])
+#usando la funcion paisDestino:
+def cantidadPasajerosPais1(pasajeros, ciudades, pais):
+    cantidad = 0
+    for i in pasajeros:
+        if pais == paisDestino(pasajeros, ciudades, i[1]):
+            cantidad += 1
+    return cantidad
+
+        
