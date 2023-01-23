@@ -105,8 +105,8 @@ def buscarCiudad(pasajeros, dni):
 def cantidadPasajerosCiudad(pasajeros, ciudad):
     cantidad = 0
     for i in pasajeros:
-        if ciudad == i[2]
-        cantidad += 1
+        if ciudad == i[2]:
+            cantidad += 1
     return cantidad 
     
 #dada una lista de paxes, una de ciudades y un dni, retorna el pais al q viaja
@@ -127,6 +127,5 @@ def cantidadPasajerosPais(pasajeros, ciudades, pais):
     for i in ciudades:
         if pais == i[1]:
             ciudad = i[0]
-    
-    cantidadPasajerosCiudad(pasajeros, ciudad)
+    return cantidadPasajerosCiudad(pasajeros, ciudad)
     
