@@ -46,6 +46,3 @@ def factorial(numero):
         f *= i
     return f
     
-
-
-
