@@ -11,9 +11,3 @@ while i != len(frase): #mientras el len de la frase sea distinto de i
     print('Letra encontrada en la posicion:', i)#cuando se encuentra la letra
     break #rompe el bucle
 print('Bye')
-
-
-
-        
-
-        
