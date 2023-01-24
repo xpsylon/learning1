@@ -87,7 +87,7 @@ def agregarPasajero(pasajeros):
 def agregarCiudad(ciudades):
     ciudad = input('Agregar ciudad "espacio vacio para cortar": ')
     while ciudad != '':
-        pais = input('Pais')
+        pais = input('Pais: ')
         ciudades.append((ciudad, pais))
         ciudad = input('Otra ciudad: ')
     return ciudades
