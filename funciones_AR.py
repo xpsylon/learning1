@@ -139,4 +139,86 @@ def cantidadPasajerosPais1(pasajeros, ciudades, pais):
             cantidad += 1
     return cantidad
 
-        
+#EJERCICIO DE CARGAR ALUMNOS: 12.1
+def cargarAlumnos(alumnos):
+    nombre = input('Nombre: ')
+    while nombre != 'x':
+        alumnos.add(nombre)
+        nombre = input('Otro nombre: ')
+    return alumnos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
