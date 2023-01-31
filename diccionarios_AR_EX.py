@@ -30,9 +30,7 @@ cadena = input('Escriba algo: ')
 ocurrencias = {}
 for i in cadena[:51]:
     ocurrencias[i]= cadena.count(i)
-<<<<<<< HEAD
 print(ocurrencias)
-=======
 for i, j in ocurrencias.items():
     print(i, ':', j)
->>>>>>> 762468f902fe4147bb81abc8ba552653a2d1bd19
+
