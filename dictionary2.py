@@ -51,7 +51,7 @@ diccio3 = {x: x**2 for x in (2, 4, 6)}
 #first we have to issue a list or a tuple
 nombres = ('javier', 'asia', 'sofia', 'martin')
 numeros = dict.fromkeys(nombres, ) #same as:
-numeros = dict.fromkeys(nombres, None)
+numeros1 = dict.fromkeys(nombres, None)
 
 #checking if a key exists in a dictionary:
 #you check with the 'in' and 'not in' KEYWORDS
@@ -73,12 +73,12 @@ nombres1 = edades.keys()
 anios = edades.values()
 
 #looping through .values():
-for anios in anios:
-    print(anios)
+for i in anios:
+    print(i)
 
 #looping through keys:
-for nombres1 in nombres1:
-    print(nombres1)
+for i in nombres1:
+    print(i)
 
 #.items()
 #returns a list containing a tuple for each key-value pair. Returns an iterable object which you can
