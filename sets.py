@@ -18,9 +18,11 @@ set4.update({'pantera', 'rosa'}) #using SET. Random output.
 lista14 = ['pierre', True, 125]
 set(lista14) #conversion not saved, original list remains untouched
 
-#set comprehension:
+#set comprehension: short way of for iteration:
 #newset = [expression for item in iterable if condition == True]
 setIterarString = {x for x in 'Hola, que tal?' if x not in ', ?'}
+setIterarString1 = {x for x in 'Hola, que tal?' if ', ?' not in x}
+
 #crear lista setIterarString
 #iterando x en 'Hola que tal'
 #siempre que no haya ', y ?'

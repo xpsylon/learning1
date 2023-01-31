@@ -45,9 +45,6 @@ def factorial(numero):
     for i in range(1, numero +1):
         f *= i
     return f
-<<<<<<< HEAD
-    
-=======
 
 def sumatoria(numeros):
     summa = 0
@@ -90,7 +87,7 @@ def agregarPasajero(pasajeros):
 def agregarCiudad(ciudades):
     ciudad = input('Agregar ciudad "espacio vacio para cortar": ')
     while ciudad != '':
-        pais = input('Pais')
+        pais = input('Pais: ')
         ciudades.append((ciudad, pais))
         ciudad = input('Otra ciudad: ')
     return ciudades
@@ -142,91 +139,4 @@ def cantidadPasajerosPais1(pasajeros, ciudades, pais):
             cantidad += 1
     return cantidad
 
-<<<<<<< HEAD
         
->>>>>>> main
-=======
-#EJERCICIO DE CARGAR ALUMNOS: 12.1
-def cargarAlumnos(alumnos):
-    nombre = input('Nombre: ')
-    while nombre != 'x':
-        alumnos.add(nombre)
-        nombre = input('Otro nombre: ')
-    return alumnos
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
->>>>>>> 762468f902fe4147bb81abc8ba552653a2d1bd19
