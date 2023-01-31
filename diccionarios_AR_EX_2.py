@@ -21,6 +21,7 @@ for letra in alfabeto:
 for i in range(3):
     #leer cadena
     cadena = input('Cadena de caracteres: ')
+    cadena = cadena.lower()
     #iteracion por cadena
     for j in cadena:
         if j in alfabeto:
