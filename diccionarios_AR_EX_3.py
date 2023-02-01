@@ -45,16 +45,26 @@ while numero != 0:
 ##Modificar la fecha de ingreso de todos los socios ingresados el 13/03/2018,
 #para indicar que en realidad ingresaron el 14/03/2018.
 print('MODIFICAR FECHA DE INGRESO')
-for valor in socios.values():
-    if valor[1] == '13/03/2018':
-        valor[1] = '14/03/2018'
+##for valor in socios.values():
+##    if valor[1] == '13/03/2018':
+##        valor[1] = '14/03/2018'
+def modificarFecha(dicc, old_date, new_date):
+    for valor in dicc.values():
+        if valor[1] == old_date:
+            valor[1] = new_date
+    return dicc
+
+fecha_vieja = input('Fecha vieja dd/mm/yyyy: ')
+fecha_nueva = input('Fecha nueva dd/mm/yyyy: ')
+
+socios = modificarFecha(socios, fecha_vieja, fecha_nueva)
 
 ##Solicitar el nombre y apellido de un socio y darlo de baja
 #(eliminarlo del listado). del diccionario[clave]
 nombre = input('Nombre de socio a dar de baja: ')
-for i in socios:
-    if nombre == socios[i][0]:
-        del socios[i]
+for clave, valor in socios.items():
+    if nombre == socios[clave][0]:
+        del socios[clave]
         
 
         
