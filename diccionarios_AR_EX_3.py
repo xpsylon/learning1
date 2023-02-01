@@ -61,11 +61,14 @@ socios = modificarFecha(socios, fecha_vieja, fecha_nueva)
 
 ##Solicitar el nombre y apellido de un socio y darlo de baja
 #(eliminarlo del listado). del diccionario[clave]
-nombre = input('Nombre de socio a dar de baja: ')
-for clave, valor in socios.items():
-    if nombre == socios[clave][0]:
-        del socios[clave]
+def eliminarSocio(dicc, name):
+    for clave, valor in dicc.items():
+        if name == dicc[clave][0]:
+            return dicc[clave]
         
+nombre = input('Nombre de socio a dar de baja: ')
+numero = eliminarSocio(socios, nombre)
+del numero
 
         
 
