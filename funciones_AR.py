@@ -147,78 +147,33 @@ def cargarAlumnos(alumnos):
         nombre = input('Otro nombre: ')
     return alumnos
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+#EJERCICIO DICCIONARIOS 13.2
+#modifica la fecha de ingreso de un socio. Se ingresan fecha a cambiar
+#y fecha nueva:
+def modificarFecha(dicc, old_date, new_date):
+    for valor in dicc.values():
+        if valor[1] == old_date:
+            valor[1] = new_date
+    return dicc
+
+#elimina un socio del listado solicitando el nombre y apellido:
+def eliminarSocio(dicc, name):
+    for clave, valor in dicc.items():
+        if valor[0] == name:
+            numero = clave
+    return numero
+
+#formatea la fecha al formato dd/mm/yyyy:
+def formatearFecha(entry_date):
+    return entry_date[:2] + '/' + entry_date[2:4] + '/' + entry_date[4:]
+
+#imprime el listado de socios en formato legible para el usuario:
+def imprimirContenedor(contenedor):
+    for clave, valor in contenedor.items():
+        print('-# Socio', clave)
+        print('-Nombre:', valor[0])
+        print('-Fecha de ingreso:', formatearFecha(valor[1]))
+        if valor[2]:
+            print('-Cuota al dia')
+        else:
+            print('Adeuda cuotas')
