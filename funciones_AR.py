@@ -160,8 +160,8 @@ def modificarFecha(dicc, old_date, new_date):
 def eliminarSocio(dicc, name):
     for clave, valor in dicc.items():
         if valor[0] == name:
-            numero = clave
-    return numero
+            return clave
+    return 0
 
 #formatea la fecha al formato dd/mm/yyyy:
 def formatearFecha(entry_date):
@@ -177,3 +177,4 @@ def imprimirContenedor(contenedor):
             print('-Cuota al dia')
         else:
             print('Adeuda cuotas')
+    return None
