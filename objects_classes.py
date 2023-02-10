@@ -11,7 +11,7 @@ class Car:                              #defining a class called Car
 # The self parameter is a reference to the current instance of the class, and
 # is used to access variables that belongs to the class.
 
-#------METHODS (FUNCTIONS)----------------------------
+#------METHODS (FUNCTIONS) INSIDE THE CLASS----------------------------
     def start(self):
         self.started = True             #parameter self with variable started from the class
         print('Vehicle started, lets go')

@@ -29,7 +29,11 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/xpsylon/PythonProjects/learning1/MAIN"
+=======
+set -gx VIRTUAL_ENV "/home/eekemony/PythonProjects/learning1/MAIN"
+>>>>>>> 8d8a2b32ecd01ddf57ef245051dfb3a46b81c525
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
