@@ -18,7 +18,7 @@ class Car:                              #defining a class called Car
 
     def increase_speed(self, acel):     #acel va a ser el paramatro para la velocidad, al dar el valor se vuelve argumento
         if self.started:                #si started True, entonces speed original 0 + argumento acel
-            self.speed = self.speed + acel
+            self.speed += acel
             print('Vrooom!')
         else:
             print('You have to start the vehicle first')  #aqui else es started false

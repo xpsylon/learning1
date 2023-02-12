@@ -11,6 +11,7 @@ class Empleado:
 class AgenteVentas(Empleado):                                                     #clase hija de Empleado (inheritance)
     def __init__(self, mostrador):                                                #overwriting _init_ from clase padre Empleado.
         self.numeroMostrador = mostrador
+    
 
 pedro = AgenteVentas(1)
 print(pedro.numeroMostrador)
