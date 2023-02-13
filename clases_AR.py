@@ -7,24 +7,18 @@ class Vehiculo:
         self.anio1 = anio
         self.dictio = {}
 
-    def startVehicle(self):
-        self.started = True
-        print('Arrancamos')
-
-    def acelerarVehicle(self, aceleracion):
-        if self.started:
-            self.speed += aceleracion
-            print(self.speed)
-        else:
-            print('Arranque primero el coche, bobo!')
-
-coche1 = Vehiculo('VW', 'Golf', 2012)
-coche1.dictio.update({'brand':coche1.marca1, 'model':coche1.modelo1, 'year':coche1.anio1})
+    def agregarCoche(self, codigo, marca, modelo, anio):
+        self.dictio[codigo] = (marca, modelo, anio)
+        self.dictio.update
+        return self.dictio
 
 
+coche1 = Vehiculo('', '', 0)
 
-
-    
-        
-    
-    
+codigo = int(input('Codigo: '))
+while codigo != 0:
+    brand = input('Marca: ')
+    model = input('Modelo: ')
+    year = int(input('Año: '))
+    codigo = int(input('Codigo: '))
+    coche1.agregarCoche(codigo, brand, model, year)
