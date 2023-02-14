@@ -10,8 +10,10 @@ class Computer:
         print('16 TB')
 
 #INSTANCE (OBJECT) OF CLASS COMPUTER
+#will already print 'in init'
 com1 = Computer()
 com2 = Computer()
+com3 = Computer()
 
 #FUNCTION CALL
 #config()                    # not defined error, add class

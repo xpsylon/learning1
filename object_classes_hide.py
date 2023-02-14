@@ -9,15 +9,23 @@ class Materia:
         self.nombreMat = nombre
         self.profesorMat = profesor
         #no puede ser anterior a 2006
-        self.fechaInicioDictado = fecha                         #atributo que sera enmascarado dentro de @property. 1
+        self.fechaInicioDictado = fecha                         
 
-    @property #decorador                                        #funcion built in para ocultar la parte set. reemplaza metodo getters. DECORATOR
-    def fechaInicioDictado(self):                               #metodo mismo nombre que atributo fecha inicio en clase Materia. Para validar la fecha antes de pasarla
-        #print('prueba')                                         #imprime solo un output para demostrar que funciona. el resto esta oculto
-        return self._fechaInicioDictado                         #guion bajo convierte el atributo en privado (invisible)
+#atributo que sera enmascarado dentro de @property
+#funcion built in para ocultar la parte set. reemplaza metodo getters.
+#metodo mismo nombre que atributo fecha inicio en clase Materia.
+#DECORATOR
+#Para validar la fecha antes de pasarla
+#guion bajo convierte el atributo en privado (invisible)
+        
+    @property #decorador                                        
+    def fechaInicioDictado(self):
+        return self._fechaInicioDictado
 
-    @fechaInicioDictado.setter #decorador setter
-    def fechaInicioDictado(self, fecha): #metodo mismo nombre pero bajo decorador setter.
+#decorador setter
+#metodo mismo nombre pero bajo decorador setter.
+    @fechaInicioDictado.setter 
+    def fechaInicioDictado(self, fecha): 
         if fecha < 2006:
             self._fechaInicioDictado = 2006
         else:
