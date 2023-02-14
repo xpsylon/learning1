@@ -14,7 +14,10 @@ class Materia:
         self.profesorMat = profesor
 
 
-ing = Carrera('Ingenieria')
+#CREO INSTANCIAS:
+ing = Carrera('Ingenieria') #de clase Carrera...
+
+#de clase Materia
 algebra = Materia('Algebra', 'Ricardo Quinteros')
 fisica = Materia('Fisica', 'Javier La Porte')
 quimica = Materia('Quimica', 'Lorena Rios')
@@ -24,7 +27,7 @@ tarot = Materia('Tarot', 'Tu Sam')  #TEST
 print(ing)
 
 #agrego materias con un Id a la lista en forma de tuplas
-#ing.materiasCar.append((134, algebra))                          #append() no es metodo de diccionario
+#ing.materiasCar.append((134, algebra))         #append() no es metodo de diccionario
 #ing.materiasCar.append((408, fisica))
 print(ing.materiasCar)
 print(len(ing.materiasCar))
