@@ -1,4 +1,5 @@
 #vamos a trabajar con super _init_ para tomar el constructor de la clase padre sin sobrescribirlo.
+#la clase Empleado PODRIA ser una clase abstracta, si no queremos que se instancie ningun objeto de la clase Empleado, sino solo de sus Subclases.
 class Empleado:
     def __init__(self, nombre, edad, legajo, sueldo):
         self.nombre1 = nombre
@@ -6,14 +7,14 @@ class Empleado:
         self.legajo1 = legajo
         self.sueldoBase = sueldo
 
-    def calcularSueldo(self, descuentos, bonos):
+    def calcularSueldo(self, descuentos, bonos): #Este metodo lo heredan tanto la clase AgenteViajes como Tripulante
         return self.sueldoBase - descuentos + bonos
 
 
 class AgenteViajes(Empleado):
-    def __init__(self, nombre, edad, legajo, sueldo, mostrador):        #parametros totales que toma la clase hija
+    def __init__(self, nombre, edad, legajo, sueldo, mostrador):        #parametros totales que toma la clase hija, se agrega parametro mostrador.
         self.numeroMostrador = mostrador                                #parametro mostrador se guarda en variable propia de objeto
-        super().__init__(nombre, edad, legajo, sueldo)                  # funcion built in super: parametros que van a pasar a la clase padre
+        super().__init__(nombre, edad, legajo, sueldo)                  #funcion built in super: parametros que van a pasar a la clase padre
 
 
 javier = AgenteViajes('Javier', 59, 'B105',5500, 5)
