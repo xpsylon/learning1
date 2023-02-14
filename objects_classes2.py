@@ -1,4 +1,4 @@
-#-------CLASS COMPUTER -------------
+tatat#-------CLASS COMPUTER -------------
 class Computer:
 
 #OVERRIDE _INIT_
