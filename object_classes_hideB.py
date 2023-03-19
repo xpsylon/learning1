@@ -1,3 +1,4 @@
+
 class Carrera:
     def __init__(self, nombre):
         self.nombreCar = nombre
@@ -8,7 +9,7 @@ class Materia:
         self.nombreMat = nombre
         self.profesorMat = profesor
         #no puede ser anterior a 2006
-        self.fechaInicioDictado = fecha                         
+        self._fechaInicioDictado = fecha                         
 
 #atributo que sera enmascarado dentro de @property
 #funcion built in para ocultar la parte set. reemplaza metodo getters.
@@ -23,7 +24,7 @@ class Materia:
     @property #decorador                                        
     def fechaInicioDictado(self):
         #print de test para comprobar que el atributo primero pasa por aqui:
-        print('prueba')
+        print('hola')
         return self._fechaInicioDictado
 
 #decorador setter
@@ -46,4 +47,5 @@ quimica = Materia('Quimica', 'Lorena Rios', 2003)
 print(algebra.fechaInicioDictado)
 print(fisica.fechaInicioDictado)
 print(quimica.fechaInicioDictado)
-ing.materiaCar[295] = algebra
+
+

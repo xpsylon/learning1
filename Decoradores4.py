@@ -5,7 +5,8 @@
 def funcion_decoradora(funcion_parametro): #funcion decoradora con el parametro de la funcion a decorar
     def funcion_interior(num1, num2): #funcion interior con dos parametros
         print('Vamos a realizar un calculo') #mensaje 1
-        funcion_parametro(num1, num2) #llamado a la funcion que se quiere decorar, tambien necesita dos parametros
+        funcion_parametro(num1, num2) #llamado a la funcion que se quiere decorar, tambien necesita los mismos parametros 
+        #que la funcion interior
         print('Calculo terminado!') #mensaje 2
     return funcion_interior #de funcion_decoradora
 

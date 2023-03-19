@@ -6,7 +6,8 @@ class Carrera:
 
 # creamos metodo propio para poder agregar materias al diccionario de manera facil
     def agregarMateria(self, materia, codigo):
-        #debe ir oculta tambien con doble underscore. Renombrado internamente por Pyhton
+        #debe ir oculta tambien con doble underscore. Renombrado interna y secretamente por python.
+        #Solo se podria acceder a el a traves de un metodo que tenga getters y setters.
         self.__materiaCar[codigo] = materia  # la variable self.MateriasCar tiene que tener el mismo nombre que el diccionario
 
 

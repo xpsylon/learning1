@@ -8,6 +8,9 @@ class Carrera:
 
 #creamos metodo propio para poder agregar materias al diccionario de manera facil.
 #la variable self.MateriasCar tiene que tener el mismo nombre que el diccionario.
+#creando un metodo, podemos agregar independientemente del contenedor que sea
+#si cambiamos el contenedor, solo habria que actualizar el metodo y el resto
+#del codigo queda invariable.
         
     def agregarMateria(self, materia, codigo):
         self.materiasCar2[codigo] = materia                  
@@ -17,16 +20,15 @@ class Materia:
         self.nombreMat = nombre
         self.profesorMat = profesor
 
-<<<<<<< HEAD
+
 #instancias con sus argumentos.
 ing = Carrera('Ingenieria')
-=======
+
 
 #CREO INSTANCIAS:
 ing = Carrera('Ingenieria') #de clase Carrera...
 
 #de clase Materia
->>>>>>> 1b75bde9817659bdeb1615128211115ab902c623
 algebra = Materia('Algebra', 'Ricardo Quinteros')
 fisica = Materia('Fisica', 'Javier La Porte')
 quimica = Materia('Quimica', 'Lorena Rios')
@@ -35,17 +37,16 @@ tarot = Materia('Tarot', 'Tu Sam')  #TEST
 
 print(ing)
 
-<<<<<<< HEAD
 #agrego materias con un Id a la lista en forma de tuplas (id, instancia)
 #append() no es metodo de diccionario
 ing.materiasCar.append((134, algebra))                           
 ing.materiasCar.append((408, fisica))
 ing.materiasCar.append((290, quimica))
-=======
+
 #agrego materias con un Id a la lista en forma de tuplas
 #ing.materiasCar.append((134, algebra))         #append() no es metodo de diccionario
 #ing.materiasCar.append((408, fisica))
->>>>>>> 1b75bde9817659bdeb1615128211115ab902c623
+
 print(ing.materiasCar)
 print(len(ing.materiasCar))
 

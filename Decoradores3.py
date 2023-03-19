@@ -15,7 +15,7 @@ def suma():
     a = num1 + num2
     print(a)
 
-suma()
+suma() #cuando llamamos la funcion ya esta decorada en su definicion.
 
 @funcion_decoradora
 def resta():

@@ -14,7 +14,7 @@ def funcion_decoradora(funcion_parametro):
     def funcion_interior(): # funcion interior
         #codigo interno funcion_interior:
         print('Vamos a realizar un calculo') #mensaje 1
-        funcion_parametro() #llamamos a la funcion paramtro (suma o resta)
+        funcion_parametro() #llamamos a la funcion parametro (suma o resta)
         print('Hemos terminado el calculo') #mensaje 2
     return funcion_interior #return de la funcion DECORADORA (check indentation)
 
